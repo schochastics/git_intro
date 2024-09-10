@@ -1,16 +1,31 @@
 ---
-title: "Let's Git going"
-author: David Schoch
-description: "A short introduction to Git(Hub)"
-lesson: 1
-institute: GESIS
-date-format: "YYYY-MM-DD"
-footer: "[Automated Reports & Co with Quarto and Markdown](https://gesiscss.github.io/quarto-workshop/)"
-format:    
-  html:
-    toc: true
+title: A short introduction to Git(Hub)
+author:
+  - name:
+      given: David
+      family: Schoch
+    email: david.schoch@gesis.org
+    orcid: 0000-0003-2952-4812
+    affiliations:
+      - name: "GESIS - Leibniz Institute for the Social Sciences"
+csl: apa.csl
+format:
+  html: default
+  ipynb: default
+license: CC BY
 ---
 
+## Learning Objectives
+
+By the end of this tutorial, you will be able to
+
+1. Setup your own GitHub account
+2. Use GitHub from RStudio or the command line
+3. Create your first Git repository
+
+## Target audience
+
+This tutorial is aimed at beginners who have not used version control before
 
 ## What is Git?
 
@@ -263,15 +278,15 @@ To test the connection to GitHub (and alos RStudio) we need to create a test rep
 
 1. Make sure you are logged into GitHub
 2. In the upper right corner, click "+" and "New repository"
-3. Use the following setup: ![](../img/new_gh_repo1.png)
+3. Use the following setup: ![](new_gh_repo1.png)
 4. Click "Create repository"
-5. You will end up here: ![](../img/new_gh_repo2.png)
+5. You will end up here: ![](new_gh_repo2.png)
 6. Click the green "<> Code" Button
 7. Choose SSH and copy the URL
 
 To clone the repository to your computer, you can either use your Git client, e.g. [Gitkraken](https://help.gitkraken.com/gitkraken-client/open-clone-init/#cloning-an-existing-project) under *File > Open Repo*:
 
-![](https://help.gitkraken.com/wp-content/uploads/clone-url.png)
+![](clone-url.png)
 
 or via the shell:  
 1. navigate to the directory you want to use via `cd`
@@ -362,7 +377,7 @@ or via RStudio:
 *File > New Project > Version Control > Git*. In the "repository URL" paste the SSH URL (`git@github.com:YOUR-USERNAME/REPOSITORY.git`) of your new GitHub repository.
 
 If you open the Project via *File > Open Project* you will find a pane called git:
-![](../img/rstudio_git_pane.png)
+![](rstudio_git_pane.png)
 
 This is the small Git client built into RStudio. It is very convenient for simple add/commit/push/pull tasks so you do not have to switch to the shell or another client to perform GitHub tasks.
 
