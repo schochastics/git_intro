@@ -12,7 +12,7 @@ csl: apa.csl
 format:
   html: default
   ipynb: default
-license: CC BY
+license: CC BY-NC
 ---
 
 ## Learning Objectives
