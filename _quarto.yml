@@ -1,0 +1,5 @@
+project:
+  title: A short introduction to Git(Hub)
+  type: default
+  render:
+    - index.qmd
